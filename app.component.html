@@ -3,3 +3,31 @@
 <br>
 <br>
 <button (click)="toggleButton()">Enble</button>
+
+
+<h2>Employee List</h2>
+<table  border="2" [cellPadding]="10">
+
+  <tr>
+<th>ID</th>
+<th>Name</th>
+<th>Departmant</th>
+<th>Salary</th>
+
+
+  </tr>
+
+
+  <tr *ngFor="let emp of employees">
+    <td>{{emp.id}}</td>
+    <td>{{emp.name}}</td>
+    <td>{{emp.departmant}}</td>
+    <td>{{emp.Salary}}</td>
+
+
+
+  </tr>
+
+
+
+</table>
